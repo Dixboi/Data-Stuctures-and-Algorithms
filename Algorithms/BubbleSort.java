@@ -1,7 +1,7 @@
 
 public class Main
 {
-    
+	
     static void bubbleSort(int[] listToBeSorted) {
         for (int number1 = 0; number1 < listToBeSorted.length; number1++) {
             for (int number2 = 0; number2 < listToBeSorted.length; number2++) {
