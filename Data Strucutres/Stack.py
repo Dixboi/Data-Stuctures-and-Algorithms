@@ -15,10 +15,11 @@ class Stack:
         print(self.item)
 
 
-s = Stack()
-s.push(2)
-s.push(3)
-s.push(4)
-s.push(5)
-s.pop()
-s.print_stack()
+if __name__ == "__main__":
+    s = Stack()
+    s.push(2)
+    s.push(3)
+    s.push(4)
+    s.push(5)
+    s.pop()
+    s.print_stack()
