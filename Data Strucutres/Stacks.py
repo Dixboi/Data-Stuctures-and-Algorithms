@@ -1,16 +1,9 @@
-lass Stack:
+class Stack: # Stack class with a limit size
     
     #Constructor
-    def __init__(self, stack = []):
-        self.stack = stack
-        
-    #To add an item at the top
-    def push(self, item = " "):
-        self.stack.append(item)
-        
-    #To remove the top item
-    def pop(self):
-        self.stack.pop()
+    def __init__(self, size = 5):
+        self.stack = []
+        self.size = size
         
     #To count the number of items
     def count(self):
@@ -23,6 +16,16 @@ lass Stack:
     #To know the top item
     def top(self):
         return self.stack[-1] if self.empty() == False else "No items"
+        
+    #To add an item at the top
+    def push(self, item = " "):
+        if self.size > self.count():
+            self.stack.append(item)
+        
+    #To remove the top item
+    def pop(self):
+        if self.empty():
+            self.stack.pop()
         
     #To display all the items from the top
     def items(self):
@@ -38,9 +41,3 @@ lass Stack:
         print("Number of Items:", self.count())
         print("Top Item:", self.top())
         self.items()
-        
-if __name__ == "__main__":
-    s1 = Stack()
-    s2 = Stack([1, 2, 3])
-    s1.details()
-    s2.details()
