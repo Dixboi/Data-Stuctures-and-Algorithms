@@ -24,8 +24,10 @@ class Stack: # Stack class with a limit size
         
     #To remove the top item
     def pop(self):
-        if self.empty():
+        if self.empty() == False:
             self.stack.pop()
+        else:
+            print("Empty stack")
         
     #To display all the items from the top
     def items(self):
