@@ -2,7 +2,7 @@
 ***Compilation of Data Structures, Algorithms, and Dynamic Programming***
 
 **Data Structures**
-- [Stack](https://github.com/Dixboi/Data-Stuctures-and-Algorithms/tree/main/Data%20Structures/Stack)
+- [Stack](https://github.com/Dixboi/Data-Stuctures-and-Algorithms/tree/main/Data%20Structures/Stack) - a collection of elements that follow the **LIFO**(Last In First Out) principle where the **last** added element is the one that can be removed **first**.
 
 
 **Algorithms**
