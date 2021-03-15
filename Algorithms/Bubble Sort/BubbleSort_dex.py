@@ -1,7 +1,8 @@
-def bubble_sort(list_to_be_sorted):
-	for number_1 in range(len(list_to_be_sorted)):
-		for number_2 in range(len(list_to_be_sorted)):
-			if list_to_be_sorted[number_1] < list_to_be_sorted[number_2]:
-				list_to_be_sorted[number_1], list_to_be_sorted[number_2] = list_to_be_sorted[number_2], list_to_be_sorted[number_1]
-				
-	return list_to_be_sorted
+
+def bubble_sort(to_sort):
+    for loop_count in range(len(to_sort) - 1):
+        for element in range(len(to_sort) - loop_count - 1):
+            if to_sort[element] > to_sort[element + 1]:
+                to_sort[element], to_sort[element + 1] = to_sort[element + 1], to_sort[element]
+                
+    return to_sort
