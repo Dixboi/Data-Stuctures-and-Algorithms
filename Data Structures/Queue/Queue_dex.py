@@ -39,6 +39,7 @@ class Queue:
         print("Empty:", self.isEmpty())
         print("Full:", self.isFull())
         print("Current count:", self.count())
+	print("First element: ", self.peek())
         print("Queue:")
         
         for i in self.queue:
