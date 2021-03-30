@@ -13,6 +13,8 @@ def fib_recur(n):
 def fib_dynamic(n):
     series = [0, 1]
     
+    if n < 2: return series[n]
+    
     for i in range(2, n):
         series.append(series[-1] + series[-2])
         
