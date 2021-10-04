@@ -5,7 +5,7 @@ class StackQueue():
         self.og_stack = []
         self.pl_stack = []
        
-	#add elemenent to the stack
+	#add elemenent to queue
     def enqueue(self, data):
         #if og_stack is empty
         if len(self.og_stack) == 0:
@@ -22,7 +22,7 @@ class StackQueue():
                 element = self.pl_stack.pop()
                 self.og_stack.append(element)
      
-	#remove element from the stack
+	#remove element from queue
     def dequeue(self):
         #if og_stack is empty
         if len(self.og_stack) == 0:
@@ -30,7 +30,7 @@ class StackQueue():
         #if og_stack is not empty
         else:
             self.og_stack.pop()
-                
+    #display elements of queue
     def display(self):
         for data in self.og_stack[::-1]:
             print(data)
